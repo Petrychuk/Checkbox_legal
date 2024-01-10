@@ -1,0 +1,88 @@
+body {
+  font-family: 'Michroma', sans-serif;
+}
+h1 {
+    width: 162px; /* Ширина изображения */
+    height: 157px; /* Высота изображения */
+    background: url('images/Logo5c black blue.jpg') no-repeat; /* Устанавливаем изображение в качестве фона */
+    display: inline-block; /* Делаем изображение блочным элементом */
+}
+
+
+ .text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Горизонтальное смещение, вертикальное смещение, радиус размытия и цвет тени */
+    font-size: 22px;
+}
+  
+.centered-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.сontact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+}
+
+.link, .hover-link {
+    font-size: 15px;
+    text-decoration: none;
+    color: #000; /* Цвет текста */
+    padding: 10px 20px;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Анимация при ховере */
+    text-align: center;
+}
+
+.link:hover {
+    background-color: #00BFFF; /* Цвет фона при ховере */
+    width: 500px; /* Для десктопа и планшета */
+    filter: blur(0.5px); /* Размытие текста */
+    border: 2px solid #fff; /* Белый бордер при ховере */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Тень при ховере */
+}
+.hover-link:hover {
+   background-color: #D3D3D3; /* Цвет фона при ховере */ 
+   width: 500px; /* Для десктопа и планшета */
+   filter: blur(0.5px); /* Размытие текста */
+   border: 2px solid #fff; /* Белый бордер при ховере */
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Тень при ховере */
+}
+h2 {
+    font-size: 19px;
+}
+
+@media (max-width: 768px) { /* Для мобильных устройств */
+    .link:hover {
+        width: 100%; /* На всю ширину экрана */
+        margin: 10px 0; /* Небольшие отступы по краям */
+    }
+.text-with-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Горизонтальное смещение, вертикальное смещение, радиус размытия и цвет тени */
+    font-size: 16px;
+}
+h2 {
+    font-size: 14px;
+}
+.centered-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+.link, .hover-link {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000; /* Цвет текста */
+    padding: 10px 20px;
+    margin: 10px;
+    transition: background-color 0.3s ease; /* Анимация при ховере */
+    text-align: center;
+}
+}

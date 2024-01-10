@@ -1,5 +1,5 @@
 body {
-  font-family: 'Michroma', sans-serif;
+    font-family: 'Michroma', sans-serif;
 }
 h1 {
     width: 162px; /* Ширина изображения */
@@ -8,8 +8,7 @@ h1 {
     display: inline-block; /* Делаем изображение блочным элементом */
 }
 
-
- .text-with-shadow {
+.text-with-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Горизонтальное смещение, вертикальное смещение, радиус размытия и цвет тени */
     font-size: 22px;
 }
@@ -38,37 +37,43 @@ h1 {
     transition: background-color 0.3s ease; /* Анимация при ховере */
     text-align: center;
 }
+.link:hover, .hover-link:hover {
+    width: 500px; /* Для десктопа и планшета */
+    filter: blur(0.5px); /* Размытие текста */
+    border: 1px solid #fff; /* Белый бордер при ховере */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Тень при ховере */
+} 
 
 .link:hover {
     background-color: #00BFFF; /* Цвет фона при ховере */
-    width: 500px; /* Для десктопа и планшета */
-    filter: blur(0.5px); /* Размытие текста */
-    border: 2px solid #fff; /* Белый бордер при ховере */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Тень при ховере */
 }
 .hover-link:hover {
-   background-color: #D3D3D3; /* Цвет фона при ховере */ 
-   width: 500px; /* Для десктопа и планшета */
-   filter: blur(0.5px); /* Размытие текста */
-   border: 2px solid #fff; /* Белый бордер при ховере */
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Тень при ховере */
+   background-color: #D3D3D3; /* Цвет фона при ховере */    
 }
 h2 {
     font-size: 19px;
+    margin-top: 20px;
+}
+.copyright {
+    margin: 20px 0;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) { /* Для мобильных устройств */
-    .link:hover {
-        width: 100%; /* На всю ширину экрана */
-        margin: 10px 0; /* Небольшие отступы по краям */
+.link:hover {
+    width: 100%; /* На всю ширину экрана */
+     margin: 10px 0; /* Небольшие отступы по краям */
     }
+
 .text-with-shadow {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Горизонтальное смещение, вертикальное смещение, радиус размытия и цвет тени */
     font-size: 16px;
 }
+
 h2 {
     font-size: 14px;
 }
+
 .centered-links {
     display: flex;
     flex-direction: column;
@@ -76,6 +81,7 @@ h2 {
     align-items: center;
     height: 40vh;
 }
+
 .link, .hover-link {
     font-size: 12px;
     text-decoration: none;
@@ -84,5 +90,10 @@ h2 {
     margin: 10px;
     transition: background-color 0.3s ease; /* Анимация при ховере */
     text-align: center;
+}
+
+.copyright {
+    margin: 20px 0;
+    font-size: 10px;
 }
 }
